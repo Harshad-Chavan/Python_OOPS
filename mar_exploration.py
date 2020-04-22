@@ -13,7 +13,7 @@ def marsExploration(s):
             count += 1
         if part[2] != 'S':
             count += 1
-    print(count)
+    return(count)
     
 
 marsExploration(s)
