@@ -6,9 +6,11 @@ l = []
 def birthday(s, d, m):
     i = 0
     count = 0
+    if len(s) < m:
+        return count
     for _ in s[i:len(s)]:
         if sum(s[i:(i + m)]) == d:
             count += 1
         i += 1
-    print(count)
+    return count
 birthday(s,d,m)
